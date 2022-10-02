@@ -3,6 +3,7 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import dts from "vite-plugin-dts";
 import checker from "vite-plugin-checker";
+import pkg from "./package.json";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -29,7 +30,11 @@ export default defineConfig({
 		},
 
 		rollupOptions: {
-			external: ["react", "react-dom", "stitches"],
+			external: [
+				...Object.keys(pkg.dependencies ?? {}),
+				...Object.keys(pkg.devDependencies ?? {}),
+				...Object.keys(pkg.peerDependencies ?? {})
+			],
 			output: {
 				globals: {
 					"react": "React",
