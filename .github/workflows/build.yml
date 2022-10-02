@@ -3,7 +3,7 @@ name: Build
 on:
   push:
     branches:
-      - pipeline
+      - main
 
 jobs:
   build:
@@ -49,6 +49,6 @@ jobs:
         run: pnpm install
 
       - name: Publish
-        run: pnpm publish --dry-run
+        run: pnpm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
