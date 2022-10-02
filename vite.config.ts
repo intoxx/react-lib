@@ -25,8 +25,8 @@ export default defineConfig({
 
 		lib: {
 			entry: resolve(__dirname, "lib/main.tsx"),
-			name: "react-lib-3",
-			filename: "react-lib-3"
+			name: "react-lib",
+			filename: "react-lib"
 		},
 
 		rollupOptions: {
