@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@stitches/react': ^1.2.8
   '@types/react': ^18.0.17
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.1.0
@@ -15,6 +16,7 @@ specifiers:
   vite-plugin-dts: ^1.6.1
 
 devDependencies:
+  '@stitches/react': 1.2.8_react@18.2.0
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.1.0_vite@3.1.4
@@ -444,6 +446,14 @@ packages:
       argparse: 1.0.10
       colors: 1.2.5
       string-argv: 0.3.1
+    dev: true
+
+  /@stitches/react/1.2.8_react@18.2.0:
+    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+    dependencies:
+      react: 18.2.0
     dev: true
 
   /@ts-morph/common/0.17.0:
