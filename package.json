@@ -1,18 +1,18 @@
 {
-	"name": "react-lib-3",
+	"name": "react-lib",
 	"private": true,
-	"version": "0.0.0",
+	"version": "0.0.1",
 	"type": "module",
 	"files": [
 		"dist"
 	],
-	"main": "./dist/react-lib-3.umd.cjs",
-	"module": "./dist/react-lib-3.js",
+	"main": "./dist/react-lib.umd.cjs",
+	"module": "./dist/react-lib.js",
 	"types": "./dist/main.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/react-lib-3.js",
-			"require": "./dist/react-lib-3.umd.cjs"
+			"import": "./dist/react-lib.js",
+			"require": "./dist/react-lib.umd.cjs"
 		},
 		"./dist/style.css": "./dist/style.css"
 	},
@@ -23,13 +23,14 @@
 		"preview": "vite preview"
 	},
 	"devDependencies": {
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
 		"@types/react": "^18.0.17",
 		"@types/react-dom": "^18.0.6",
 		"@vitejs/plugin-react": "^2.1.0",
+		"@stitches/react": "^1.2.8",
 		"autoprefixer": "^10.4.12",
 		"postcss": "^8.4.17",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
 		"tailwindcss": "^3.1.8",
 		"typescript": "^4.6.4",
 		"vite": "^3.1.0",
@@ -37,6 +38,7 @@
 		"vite-plugin-dts": "^1.6.1"
 	},
 	"peerDependencies": {
+		"@stitches/react": "^1.2.8",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
 	}
